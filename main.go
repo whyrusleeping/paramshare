@@ -155,6 +155,7 @@ var recvCmd = cli.Command{
 		dir := "/var/tmp/filecoin-proof-parameters/"
 		list := "0.0.0.0:15123"
 
+		fmt.Println("listening on: ", list)
 		l, err := net.Listen("tcp", list)
 		if err != nil {
 			return err
